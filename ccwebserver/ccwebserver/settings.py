@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'home.apps.HomeConfig'
-]
+    'blog',
+    'users',
+    'corsheaders',
+
+]   
+AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,7 +53,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  
+    'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = (
+    'localhost:8000',
+)
+CORS_ORIGIN_REGEX_WHITELIST = (
+    'localhost:8000',
+)
 
 ROOT_URLCONF = 'ccwebserver.urls'
 
@@ -79,12 +94,12 @@ DATABASES = {
         'default': {
             'ENGINE': 'djongo',
             'ENFORCE_SCHEMA': False,
-            'NAME': 'CrispCodeDB',
+            'NAME': 'ccwebdb',
             'HOST': 'mongodb://127.0.0.1',
             'PORT': 27017,
-            'USER': 'crispcode',
+            'USER': 'justin',
             'PASSWORD': 'zill4zill4',
-            'AUTH_SOURCE': 'CrispCodeDB',
+            'AUTH_SOURCE': 'ccwebdb',
             'AUTH_MECHANISM': 'SCRAM-SHA-1',
         }
     }
