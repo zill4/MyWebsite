@@ -1,7 +1,60 @@
+<script>
+// inline event: <div on:mousemove="{e => m = {x: e.clientX, y: e.clientY }}">
+
+	import { createEventDispatcher } from 'svelte';
+
+	let navKeys = [
+		{id: 1, name:'Home', class: 'active'},
+		{id: 2, name:'News', class: 'not-active'},
+		{id: 3, name:'Contact', class: 'not-active'}
+	];
+	const dispatch = createEventDispatcher();
+
+	function welcomeMessage() {
+		dispatch('message', {
+			text: 'Welcome!!'
+		});
+	}
+
+	export let navMessage = `Welcome!`;
+
+	let user = {loggedIn: false};
+
+	function toggle(){
+		user.loggedIn = !user.loggedIn;
+	}
+	// Event based update for mouse movement.
+	var m = {x:0, y:0};
+
+	function handleMousemove(event) {
+		m.x = event.clientX;
+		m.y = event.clientY;
+
+	}
+</script>
+
 <div class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+	{#each navKeys as key (key.id)}
+		<a class={key.class} target="_blank" href="#{key.name}">
+			{key.name}
+		</a>	
+	{/each}
+
+	<a class ="right" href="#message" on:click={welcomeMessage}>{navMessage}</a>
+	
+	<div on:mousemove={handleMousemove}>
+		<a class ="right" href="#mouseData"> Mouse: {m.x} x {m.y} </a>
+	</div>
+		{#if user.loggedIn}
+			<button on:click={toggle}>
+			Log out 
+			</button>
+		{:else}
+			<button on:click={toggle}>
+			Log in 
+			</button>
+		{/if}
+
 </div> 
 
 <style>
@@ -22,10 +75,22 @@
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 30px 30px;
 	text-decoration: none;
 	font-size: 17px;
   }
+
+    .navbar a.right {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+
+  
   
   /* Change the color of links on hover */
   .navbar a:hover {
