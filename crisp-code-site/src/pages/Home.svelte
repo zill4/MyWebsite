@@ -1,5 +1,4 @@
 <script>
-	export let name;
 	import Contact from './Contact.svelte';
 	let text = `<strong>Sample!</strong>`;
 	// import About from './About.svelte';
@@ -58,9 +57,8 @@
 		<p>I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.</p>
 		<p>Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team. Since then I've been working in Developer Relations on the Bixby team.</p>
 		<p>It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.</p>
-
   </div>
-
+		<Poke/>
 	<!-- <p>{count} doubled is {doubled}</p>
 	<p>{numbers.join(' + ')} = {sum}</p>
 	<button on:click={addNumber}>
@@ -69,6 +67,11 @@
 
 
 	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<br>
 	<br>
 	<br>
 	<br>

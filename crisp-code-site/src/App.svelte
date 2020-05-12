@@ -1,15 +1,13 @@
 <script>
 	import Link from './Link.svelte';
 	import Route from './Route.svelte';
-	export let name;
 
 	
-	  let isOpen = false;
-
-	  
+	let isOpen = false;  
 	function handleUpdate(event) {
 		isOpen = event.detail.isOpen;
 	}
+	
 </script>
 
 <style>
@@ -37,22 +35,23 @@
 </style>
 
 <!-- Navigation goes here -->
- <!-- <nav class="navbar navbar-inverse">
+ <nav class="navbar navbar-inverse">
  <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">CrispCode.io</a>
+      <a class="navbar-brand" href="/">CrispCode.io</a>
     </div>
 	<ul class="nav navbar-nav">
 		<li class="active"><Link  page={{path: '/', name: 'Home'}} /></li>
-      <li><Link page={{path: '/about', name: 'About'}} /></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      	<li><Link page={{path: '/about', name: 'About'}} /></li>
+      	<li><Link page={{path: '/resume', name: 'Resume'}} /></li>
+      	<li><Link page={{path: '/projects', name: 'Projects'}} /></li>
 	</ul>
 	</div>
- </nav> -->
+ </nav>
 					 		
 <!-- Main container goes here -->
 <Route />
+<!-- Footer  goes here -->
 
 <footer class="text-center">
 	<div class="social">
