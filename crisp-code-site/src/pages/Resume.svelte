@@ -1,5 +1,22 @@
 <script>
-import data from '../store/data.js'
+import data from '../store/data.js';
+import Experience from './resume/Experience.svelte';
+import Achievements from './resume/Achievements.svelte';
+import Volunteer from './resume/Volunteer.svelte';
+import Education  from './resume/Education.svelte';
+
+let tab = [
+  { id: 1, name: 'Experience',  status: 'active'},
+  { id: 2, name: 'Achievements',  status: 'inactive'},
+  { id: 3, name: 'Education',     status: 'inactive'},
+  { id: 4, name: 'Vounteer',      status: 'inactive'}
+  ];
+
+function handleTabClick (item){
+  tab.forEach(e => e.status = 'inactive');
+  tab[item.id - 1].status = 'active';
+}
+
 </script>
 
 
@@ -11,10 +28,10 @@ import data from '../store/data.js'
         <h1>{data.firstName} {data.middleName} {data.lastName}</h1>
 
     </div>
-            <h1>{data.header}</h1>
-            <p>{data.location}</p>
+            <h2>{data.header}</h2>
+            <h3>{data.location}</h3>
         <br>
-            <p>{data.objective}</p>
+            <h4>{data.objective}</h4>
       <!-- <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Bio</a></li>
         <li><a href="#section2">Friends</a></li>
@@ -35,25 +52,20 @@ import data from '../store/data.js'
     <div class="col-sm-9">
       <h4><small>WORK IN PROGRESS</small></h4>
         <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Experience</a></li>
-    <li><a href="#">Achievments</a></li>
-    <li><a href="#">Education</a></li>
-    <li><a href="#">Volunteer</a></li>
-  </ul>
-    <div class="experience">
-        {#each data.experience as exp}
-        <hr>
-        <h2>{exp.title}</h2>
-        <p>{exp.company}</p>
-        <img src={exp.img} alt={exp.company}>
-        <h5><span class="glyphicon glyphicon-time"></span>{exp.start} - {exp.end}</h5>
-        <h5><span class="label label-danger">{exp.location}</span> <span class="label label-primary">Ipsum</span></h5><br>
-            {#each exp.bullets as point}
-                <p>{point}</p>
-            {/each}
-        <br><br>
-        {/each}
-    </div>
+          <li  on:click={handleTabClick(tab[0])}  class={tab[0].status}><a href="#">{tab[0].name}</a></li>
+          <li  on:click={handleTabClick(tab[1])}  class={tab[1].status}><a href="#">{tab[1].name}</a></li>
+          <li  on:click={handleTabClick(tab[2])}  class={tab[2].status}><a href="#">{tab[2].name}</a></li>
+          <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
+        </ul>
+    {#if tab[0].status == 'active'}
+    <Experience />
+    {:else if tab[1].status == 'active'}
+    <Achievements />
+    {:else if tab[2].status == 'active'}
+    <Education />
+    {:else if tab[3].status == 'active'}
+    <Volunteer />
+    {/if}
 <!-- 
       <h4><small>RECENT POSTS</small></h4>
       <hr>

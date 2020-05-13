@@ -48,7 +48,7 @@
 	</button> -->
   </div>
 
-  <div class="bio">
+ <div class="bio">
     <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/s960x960/83312683_2615618501848082_222548210093129728_o.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=OI9ub3NP7loAX_PT1O0&_nc_ht=scontent-sjc3-1.xx&_nc_tp=7&oh=60d4a8fc7f30095943b320ee587de484&oe=5EDA8751" class="img-rounded" alt="Justin Crisp 2020" width="25%" height="25%" > 
 	 	<h1>Hi my name is Justin Crisp</h1>
   		<p>Thanks for visiting my website! I'm 23, love building cool projects, working with passionate people, and challenging the status quo.</p>
@@ -57,6 +57,7 @@
 		<p>I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.</p>
 		<p>Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team. Since then I've been working in Developer Relations on the Bixby team.</p>
 		<p>It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.</p>
+  
   </div>
 		<Poke/>
 	<!-- <p>{count} doubled is {doubled}</p>

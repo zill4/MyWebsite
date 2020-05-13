@@ -1,6 +1,6 @@
 const data = {
     profileImage : "someurl",
-    header : "Software Engineer | Samsung Bixby Developer Relations",
+    header : "Software Engineer",
     location : "San Jose, CA",
     objective : "As a technologist I build in the latest technologies; Bixby, Svelte, and The Unreal Engine. The future is an amalgamation of services provided by data-driven API's within strong ecosystems. Voice experiences led by Samsung Bixby, A truly reactive web built on Svelte, and immersive experience beyond reality built in the Unreal Engine.",
     news : ["link1","link2","link3","link4"],
@@ -45,6 +45,55 @@ const data = {
                 "• Trained Word Vector NLP model to accurately capture user sentiment targeting specific product features based on survey responses to prioritize bug fixes and product roadmap decisions.",
                 "• Worked with multiple teams across design and engineering to bring product features to production."
             ]
+        }
+    ],
+    achievements: [
+        {
+            title: 'Samsung Bixby Hackathon at 42 Silicon Valley - 1st Place',
+            location: 'Samsung Research America',
+            start: 'Apr 2019',
+            img: {
+                link: 'https://www.42.us.org/wp-content/uploads/2019/04/samsung-bixby-9.jpg',
+                title: 'Justin Crisp presenting his winning project',
+                height: '40%',
+                width: '40%'
+                },
+            links: [
+                {link: "https://www.42.us.org/42-silicon-valley-hosts-samsung-bixby-hackathon/", title: "42 Silicon Valley Hosts Samsung Bixby Hackathon"},
+                {link: "https://github.com/zill4/BixbyDungeonMaster", title: "Bixby Dungeon Master Github"},
+                {link: "https://www.42.us.org/samsung-bixby-voice-ai-developer-hackathon-session-42-silicon-valley/", title: "Samsung Bixby Voice AI Developer Hackathon Session 42 Silicon Valley"},
+                {link: "https://medium.com/@justincrisp_39391/hackathons-and-demons-271bc6034301", title: "Hackathons and Demons Medium Article"}
+            ],
+            description: "Samsung's newly released voice assistant Bixby was made with the intention for developers to create the next wave of applications for it. Members of the Bixby team hosted a competition for students at 42 Silicon Valley, of which the students would break into teams and have one week to develop an app of their choice, using the Bixby Developer Studio. For me, I wrote a small game / utility called Bixby and Dragons, that would be in itself a proof of concept for future games on the platform."
+        },
+        {
+            title: 'Samsung SXR Hackathon - 3rd Place',
+            location: 'Samsung SXR Team',
+            start: 'Nov 2018',
+            links: [],
+            img: {
+                link: 'https://media-exp1.licdn.com/dms/image/C562DAQGAt4LXkaP38w/profile-treasury-image-shrink_1280_1280/0?e=1589436000&v=beta&t=zY-7Wm2y6pzbnW9BptijrozZO2h70QSxy9sX9lQK6pg',
+                title: 'Team 42 showing off their prizes.',
+                height: '30%',
+                width: '30%'
+                },
+
+            description: "After working on an experimental platform for AR development created by the Samsung XR team, our team created a small prototype game for the platform. We were team 42, all students from 42 Silicon Valley, and the game was an AR version of Tron light cycles developed in Unity. This was a great event, and I would look forward to working with their SDK more in the future."
+        },
+        {
+            title: 'Owl Hack 2017 - 1st Place',
+            location: 'Foothill College',
+            start: 'Nov 2017',
+            links: [],
+            img: {
+                link: '../../images/1st_owl_hacks.jpg',
+                title: 'Justin Crisp presenting his winning project',
+                height: '25%',
+                width: '25%'
+                },
+
+            description: "As a part of the team CoLab team of 2. I was the backend engineer - I created a Tomcat 9 Sever hosted on AWS linked to a MySQL database that was able to receive and send API calls in JSON from the frontend. The frontend engineer created a design and flow for the mobile iOS platform and was able to send HTTP API requests to my backend."
+            
         }
     ]
 }

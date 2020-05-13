@@ -6,7 +6,7 @@
 	let isOpen = false;  
 	let navItems = [
 		{ id: 1, name: 'Home', link: {path: '/', name: 'Home'} , status: 'active'},
-	//	{ id: 2, name: 'About', link: {path: '/about', name: 'About'}, status: 'inactive'}
+		//	{ id: 2, name: 'About', link: {path: '/about', name: 'About'}, status: 'inactive'}
 		{ id: 2, name: 'Resume', link: {path: '/resume', name: 'Resume'}, status: 'inactive'}
 		// { id: 4, name: 'Projects', link: {path: '/projects', name: 'Projects'}, status: 'inactive'}
 	];
@@ -56,11 +56,7 @@
 	<ul class="nav navbar-nav">
 		{#each navItems as item}
 		<li on:click={handleNavClick(item)} class={item.status}><Link  page={item.link} /></li>
-		<!-- <li class="active"><Link  page={{path: '/', name: 'Home'}} /></li>
-      	<li><Link page={{path: '/about', name: 'About'}} /></li>
-      	<li><Link page={{path: '/resume', name: 'Resume'}} /></li>
-      	<li><Link page={{path: '/projects', name: 'Projects'}} /></li> -->
-		  {/each}
+		{/each}
 	</ul>
 	</div>
  </nav>
