@@ -4,12 +4,14 @@ import Experience from './resume/Experience.svelte';
 import Achievements from './resume/Achievements.svelte';
 import Volunteer from './resume/Volunteer.svelte';
 import Education  from './resume/Education.svelte';
+import Projects  from './resume/Projects.svelte';
 
 let tab = [
   { id: 1, name: 'Experience',  status: 'active'},
   { id: 2, name: 'Achievements',  status: 'inactive'},
-  { id: 3, name: 'Education',     status: 'inactive'},
-  { id: 4, name: 'Vounteer',      status: 'inactive'}
+  { id: 3, name: 'Projects',  status: 'inactive'},
+  { id: 4, name: 'Education',     status: 'inactive'},
+  { id: 5, name: 'Vounteer',      status: 'inactive'}
   ];
 
 function handleTabClick (item){
@@ -56,14 +58,17 @@ function handleTabClick (item){
           <li  on:click={handleTabClick(tab[1])}  class={tab[1].status}><a href="#">{tab[1].name}</a></li>
           <li  on:click={handleTabClick(tab[2])}  class={tab[2].status}><a href="#">{tab[2].name}</a></li>
           <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
+          <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
         </ul>
     {#if tab[0].status == 'active'}
     <Experience />
     {:else if tab[1].status == 'active'}
     <Achievements />
     {:else if tab[2].status == 'active'}
-    <Education />
+    <Projects />
     {:else if tab[3].status == 'active'}
+    <Education />
+    {:else if tab[4].status == 'active'}
     <Volunteer />
     {/if}
 <!-- 
