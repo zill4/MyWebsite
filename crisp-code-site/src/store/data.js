@@ -72,7 +72,7 @@ const data = {
             start: 'Nov 2018',
             links: [],
             img: {
-                link: 'https://media-exp1.licdn.com/dms/image/C562DAQGAt4LXkaP38w/profile-treasury-image-shrink_1280_1280/0?e=1589436000&v=beta&t=zY-7Wm2y6pzbnW9BptijrozZO2h70QSxy9sX9lQK6pg',
+                link: '../../images/win_sxr.jpg',
                 title: 'Team 42 showing off their prizes.',
                 height: '30%',
                 width: '30%'
