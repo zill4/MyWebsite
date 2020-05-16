@@ -12,7 +12,7 @@ export let age;
     Here is a little bit about me: {bio}.
 </p>
 	<Poke/>
-<Navbar navMessage={`Hey!!`} on:message={handleMessage}/>
+<!-- <Navbar navMessage={`Hey!!`} on:message={handleMessage}/> -->
 
 	<!-- Sending props via specification -->
 	<!-- <About name={me.name} age={me.age} gender={me.gender} bio={me.bio}/> -->

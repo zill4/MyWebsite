@@ -1,5 +1,6 @@
 import Home from './pages/Home.svelte';
 import About from './pages/About.svelte';
+import Resume from './pages/Resume.svelte';
 
 export default [
   {
@@ -11,5 +12,11 @@ export default [
     path: '/about',
     name: 'About',
     component: About,
+  },
+  {
+    path: '/resume',
+    name: 'Resume',
+    component: Resume,
   }
+
 ]

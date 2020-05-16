@@ -20,9 +20,11 @@
     }
 
 </script>
+<div class="pokeball">
 
-<button on:click={handleClick}>
-Who's that Pokemon!
+<p> I also love Pokemon... </p>
+<button  type="button" class="btn btn-primary" on:click={handleClick}>
+Who's that Pokemon!?
 </button>
 
 {#await promise}
@@ -33,3 +35,14 @@ Who's that Pokemon!
 {:catch error}
 <p style="color: pink">{error.message}</p>
 {/await}
+</div>
+
+<style>
+.pokeball {
+     box-sizing: border-box;
+  width: 50%;
+
+  float: left;
+}
+
+</style>
