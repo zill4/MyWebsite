@@ -58,7 +58,7 @@ function handleTabClick (item){
           <li  on:click={handleTabClick(tab[1])}  class={tab[1].status}><a href="#">{tab[1].name}</a></li>
           <li  on:click={handleTabClick(tab[2])}  class={tab[2].status}><a href="#">{tab[2].name}</a></li>
           <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
-          <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
+          <li  on:click={handleTabClick(tab[4])}  class={tab[4].status}><a href="#">{tab[4].name}</a></li>
         </ul>
     {#if tab[0].status == 'active'}
     <Experience />

@@ -2,7 +2,7 @@ const data = {
     profileImage : "someurl",
     header : "Software Engineer",
     location : "San Jose, CA",
-    objective : "As a technologist I build in the latest technologies; Bixby, Svelte, and The Unreal Engine. The future is an amalgamation of services provided by data-driven API's within strong ecosystems. Voice experiences led by Samsung Bixby, A truly reactive web built on Svelte, and immersive experience beyond reality built in the Unreal Engine.",
+    objective : "It is my lifelong dream to work as a programmer in the game industry. As a software engineer, I am looking for challenging problems, passionate teams, and long hours in front a terminal creating magic. My skills are rooted in C programming, but extended to object-oriented abstractions like C++, Java, JavaScript, and Python. I have experience with Unreal Engine 4 and done VR development using Unity. Games are my passion, and my goal is to build them for the rest of my life. がんばります",
     news : ["link1","link2","link3","link4"],
     message : "hi",
     firstName : "Justin",
