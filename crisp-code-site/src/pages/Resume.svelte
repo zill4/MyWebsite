@@ -26,7 +26,7 @@ function handleTabClick (item){
   <div class="row content">
     <div class="col-sm-3 sidenav">
     <div class="profile">
-        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/s960x960/70951415_2369022189841049_3140619029027225600_o.jpg?_nc_cat=109&_nc_sid=7aed08&_nc_ohc=COs1gImcap0AX9wNmtb&_nc_ht=scontent-sjc3-1.xx&_nc_tp=7&oh=1c91a0a48643ad21b30096812e5f2aba&oe=5EE06A37" class="img-rounded" alt="Justin Crisp 2020" width="75%" height="75%"> 
+        <img src="images/Headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="75%" height="75%"> 
         <h1>{data.firstName} {data.middleName} {data.lastName}</h1>
 
     </div>
