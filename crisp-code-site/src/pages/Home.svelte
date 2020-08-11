@@ -51,7 +51,10 @@
 <Container>
  <div class="bio">
 	<Row>
-			<Col sm="12" md={{ size: 30, offset:3 }}>
+		<Col  xs="auto">
+		<img src="./images/headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="25%" height="25%"/> 
+		</Col>
+				<Col sm="12" md={{ size: 30, offset:3 }}>
 			<h1>Hi my name is Justin Crisp</h1>
 			<p>
 			Thanks for visiting my website! I'm 23, love building cool projects, working with passionate people, and challenging the status quo.
@@ -62,6 +65,7 @@
 			It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.
 			</p>
 		</Col>
+
 	</Row>
 	<Row>
 		<Col>
