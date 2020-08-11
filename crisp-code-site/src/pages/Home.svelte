@@ -49,7 +49,7 @@
   </div>
 
  <div class="bio">
-    <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/s960x960/83312683_2615618501848082_222548210093129728_o.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=OI9ub3NP7loAX_PT1O0&_nc_ht=scontent-sjc3-1.xx&_nc_tp=7&oh=60d4a8fc7f30095943b320ee587de484&oe=5EDA8751" class="img-rounded" alt="Justin Crisp 2020" width="25%" height="25%" > 
+    <img src="./images/headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="25%" height="25%" > 
 	 	<h1>Hi my name is Justin Crisp</h1>
   		<p>Thanks for visiting my website! I'm 23, love building cool projects, working with passionate people, and challenging the status quo.</p>
 		<p>After moving to The Bay Area in 2015, I subsequently enrolled in De Anza College studying Computer Engineering for about 3 years.</p>
