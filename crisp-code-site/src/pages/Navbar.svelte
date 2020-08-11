@@ -3,6 +3,7 @@
 
 	import { createEventDispatcher } from 'svelte';
 
+
 	let navKeys = [
 		{id: 1, name:'Home', class: 'active'},
 		{id: 2, name:'News', class: 'not-active'},
@@ -33,7 +34,7 @@
 	}
 </script>
 
-<div class="navbar">
+<!-- <div class="navbar">
 	{#each navKeys as key (key.id)}
 		<a class={key.class} target="_blank" href="#{key.name}">
 			{key.name}
@@ -55,7 +56,9 @@
 			</button>
 		{/if}
 
-</div> 
+</div>  -->
+
+
 
 <style>
 /* Bottom NavBar */

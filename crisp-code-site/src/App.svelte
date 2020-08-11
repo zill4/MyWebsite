@@ -1,8 +1,15 @@
 <script>
 	import Link from './Link.svelte';
 	import Route from './Route.svelte';
+	import {
+		Navbar,
+		NavbarBrand,
+		Nav,
+		NavItem,
+		NavLink
+	} from 'sveltestrap';
 
-	
+
 	let isOpen = false;  
 	let navItems = [
 		{ id: 1, name: 'Home', link: {path: '/', name: 'Home'} , status: 'active'},
@@ -47,8 +54,17 @@
 	}
 </style>
 
+<Navbar color="dark" light expand="md">
+
+  <NavbarBrand >CrispCode.io</NavbarBrand>
+    <Nav class="ml-auto" navbar>
+		{#each navItems as item}
+		<NavItem on:click={handleNavClick(item)} class={item.status}><Link  page={item.link} /></NavItem>
+		{/each}
+    </Nav>
+</Navbar>
 <!-- Navigation goes here -->
- <nav class="navbar navbar-inverse">
+ <!-- <nav class="navbar navbar-inverse">
  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">CrispCode.io</a>
@@ -60,10 +76,10 @@
 	</ul>
 	</div>
  </nav>
-					 		
+ 
+					 		 -->
 <!-- Main container goes here -->
-
-<Route />
+	<Route />
 
 <!-- Footer  goes here -->
 <footer class="text-center">

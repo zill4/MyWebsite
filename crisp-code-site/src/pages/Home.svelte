@@ -3,7 +3,8 @@
 	let text = `<strong>Sample!</strong>`;
 	// import About from './About.svelte';
     import Poke from './Poke.svelte';
-    
+    import { Col, Container, Row } from 'sveltestrap';
+
 	// From Navbar event handler
 	function handleMessage(event) {
 		alert(event.detail.text);
@@ -47,26 +48,35 @@
 		Clicked {count} {count === 1 ? 'time' : 'times'}
 	</button> -->
   </div>
-
+<Container>
  <div class="bio">
-    <img src="./images/headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="25%" height="25%" > 
-	 	<h1>Hi my name is Justin Crisp</h1>
-  		<p>Thanks for visiting my website! I'm 23, love building cool projects, working with passionate people, and challenging the status quo.</p>
-		<p>After moving to The Bay Area in 2015, I subsequently enrolled in De Anza College studying Computer Engineering for about 3 years.</p>
-		<p>Once I completed the majority of my Computer Science classes, and started working part-time at RingCentral (A UCAAS company competing with Slack & Zoom), I decided to "drop out".</p>
-		<p>I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.</p>
-		<p>Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team. Since then I've been working in Developer Relations on the Bixby team.</p>
-		<p>It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.</p>
-  
+	<Row>
+			<Col sm="12" md={{ size: 30, offset:3 }}>
+			<h1>Hi my name is Justin Crisp</h1>
+			<p>
+			Thanks for visiting my website! I'm 23, love building cool projects, working with passionate people, and challenging the status quo.
+			After moving to The Bay Area in 2015, I subsequently enrolled in De Anza College studying Computer Engineering for about 3 years.
+			Once I completed the majority of my Computer Science classes, and started working part-time at RingCentral (A UCAAS company competing with Slack & Zoom), I decided to "drop out".
+			I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.
+			Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team. Since then I've been working in Developer Relations on the Bixby team.
+			It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.
+			</p>
+		</Col>
+	</Row>
+	<Row>
+		<Col>
+ 	 		<Poke/>
+		</Col>
+	</Row>
   </div>
-		<Poke/>
+</Container>
+
+		
 	<!-- <p>{count} doubled is {doubled}</p>
 	<p>{numbers.join(' + ')} = {sum}</p>
 	<button on:click={addNumber}>
 		Add a number
 	</button> -->
-
-
 	<br>
 	<br>
 	<br>
@@ -82,7 +92,7 @@
 	.jumbotron {
 		text-align: center;
 		padding: 5em;
-		margin: 0 auto;
+		margin: 10 auto;
 		font-family: Rational
 		/* background-image: url('/vwave_background_2.gif');
 		background-repeat: no-repeat;
