@@ -1,14 +1,7 @@
 <script>
 	import Link from './Link.svelte';
 	import Route from './Route.svelte';
-	import {
-		Navbar,
-		NavbarBrand,
-		Nav,
-		NavItem,
-		NavLink
-	} from 'sveltestrap';
-
+	import { Grid, HeaderNav, HeaderNavItem, HeaderNavMenu, Header, Row, Column } from "carbon-components-svelte";
 
 	let isOpen = false;  
 	let navItems = [
@@ -30,67 +23,61 @@
 </script>
 
 <style>
-	.navbar{
-		margin-bottom:0;
+	.page-container {
+		position: relative;
+		min-height: 100vh;
 	}
-	footer {
+
+	.content-wrap {
+		padding-bottom: 2.5rem;
+	}
+	
+	.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3.5rem;
 	background-color: #2d2d30;
 	color: #f5f5f5;
-	padding: 32px;
+	}
+	
+	.footer .flex-container {
+		display: flex;
+		justify-content: center;
+	}
+	.flex-container > a {
+		width: 100px;
+		padding: 9px;
+		text-align: center;
+		font-size: 30px;
 	}
 
-
-
-	footer a:hover {
-	color: black;
-	text-decoration: none;
-	}
-
-	footer a {
-		padding: 2rem;
-	}
-	.legal {
-		font-size: 11px;
-	}
 </style>
-
-<Navbar color="dark" light expand="md">
-
-  <NavbarBrand >CrispCode.io</NavbarBrand>
-    <Nav class="ml-auto" navbar>
+<!-- Header Nav Bar -->
+<Header platformName="CrispCode.io">
+	<HeaderNav aria-label="CrispCodeNavbar">
 		{#each navItems as item}
-		<NavItem on:click={handleNavClick(item)} class={item.status}><Link  page={item.link} /></NavItem>
+		<Link  page={item.link}/>
 		{/each}
-    </Nav>
-</Navbar>
-<!-- Navigation goes here -->
- <!-- <nav class="navbar navbar-inverse">
- <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">CrispCode.io</a>
-    </div>
-	<ul class="nav navbar-nav">
-		{#each navItems as item}
-		<li on:click={handleNavClick(item)} class={item.status}><Link  page={item.link} /></li>
-		{/each}
-	</ul>
-	</div>
- </nav>
- 
-					 		 -->
+	</HeaderNav>
+</Header>
 <!-- Main container goes here -->
-	<Route />
-
-<!-- Footer  goes here -->
-<footer class="text-center">
-	<div class="social">
-		<a href="https://github.com/zill4/"> <i class="fa fa-github" style="font-size:38px;color:grey"></i></a>
-		<a href="https://www.twitch.tv/zill4/"><i class="fa fa-twitch" style="font-size:38px;color:grey"></i></a>
-		<a href="https://twitter.com/justcr1sp"><i class="fa fa-twitter" style="font-size:38px;color:grey"></i></a>
-		<a href="https://www.facebook.com/justin.l.troutman"><i class="fa fa-facebook" style="font-size:38px;color:grey"></i></a>
-		<a href="https://www.linkedin.com/in/justcrisp/"><i class="fa fa-linkedin" style="font-size:38px;color:grey"></i></a>
-		<a href="https://angel.co/u/justin-crisp"><i class="fa fa-angellist" style="font-size:38px;color:grey"></i></a>
-		<a href="https://www.instagram.com/justinkrysp/"><i class="fa fa-instagram" style="font-size:38px;color:grey"></i></a>
+<div class="page-container">
+	<div class="content-wrap">
+		<!-- Page content -->
+			<Route />
 	</div>
-	<p class="legal">© 2020 CrispCode.io code is guaranteed crisp, clean, and precise. Headquarters are in San Jose, California. </p>
-</footer>
+		<!-- Footer -->
+			<footer class="footer">
+				<div class="flex-container">
+					<a href="https://github.com/zill4/"> <i class="fa fa-github" style="font-size:38px;color:grey"></i></a>
+					<a href="https://www.twitch.tv/zill4/"><i class="fa fa-twitch" style="font-size:38px;color:grey"></i></a>
+					<a href="https://twitter.com/justcr1sp"><i class="fa fa-twitter" style="font-size:38px;color:grey"></i></a>
+					<a href="https://www.facebook.com/justin.l.troutman"><i class="fa fa-facebook" style="font-size:38px;color:grey"></i></a>
+					<a href="https://www.linkedin.com/in/justcrisp/"><i class="fa fa-linkedin" style="font-size:38px;color:grey"></i></a>
+					<a href="https://angel.co/u/justin-crisp"><i class="fa fa-angellist" style="font-size:38px;color:grey"></i></a>
+					<a href="https://www.instagram.com/justinkrysp/"><i class="fa fa-instagram" style="font-size:38px;color:grey"></i></a>
+				</div>
+			</footer>
+</div>
+	 	

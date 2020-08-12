@@ -16,7 +16,7 @@
     "svelte": "^3.24.1"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4",
-    "sveltestrap": "^3.7.3"
+    "carbon-components-svelte": "^0.9.4",
+    "sirv-cli": "^0.4.4"
   }
 }
