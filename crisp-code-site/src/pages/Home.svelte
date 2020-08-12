@@ -41,7 +41,7 @@
 
   <div class="jumbotron">
 	<img src="./images/crispcode_logo.png" alt="crispcode.io"/>
-	<p>Meow</p>
+	<p>Under Construction 8/12 built with Svelte </p>
 	<!-- <button on:click={handleClick}> 
 		Clicked {count} {count === 1 ? 'time' : 'times'}
 	</button> -->
