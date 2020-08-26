@@ -54,7 +54,7 @@
 	<div class="col-6 col-s-9">
 			<h1 class="intro">Hi my name is Justin Crisp</h1>
 			<p class="par">
-			Thanks for visiting my website! I'm love building cool projects, working with passionate people, and challenging the status quo.
+			Thanks for visiting my website! I love building cool projects, working with passionate people, and challenging the status quo.
 			After moving to The Bay Area in 2015, I subsequently enrolled in De Anza College studying Computer Engineering for about 3 years.
 			Once I completed the majority of my Computer Science classes, and started working part-time at RingCentral (A UCAAS company competing with Slack & Zoom), I decided to "drop out".
 			I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.
