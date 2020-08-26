@@ -10,8 +10,8 @@ let tab = [
   { id: 1, name: 'Experience',  status: 'active'},
   { id: 2, name: 'Achievements',  status: 'inactive'},
   { id: 3, name: 'Projects',  status: 'inactive'},
-  { id: 4, name: 'Education',     status: 'inactive'},
-  { id: 5, name: 'Vounteer',      status: 'inactive'}
+  { id: 4, name: 'Education',     status: 'inactive'}
+  // { id: 5, name: 'Vounteer',      status: 'inactive'}
   ];
 
 function handleTabClick (item){
@@ -20,34 +20,31 @@ function handleTabClick (item){
 }
 
 </script>
-
+  <div>
+    <h1>Resume</h1>
+  </div>
  <div class="row">
-
-	<div class="col-3 col-s-3 menu">
+	  <div class="col-3 col-s-3 menu">
     <div class="profile">
-  			<img src="./images/headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="75%" height="75%"> 
+  			<img src="./images/headshot.jpg" class="img-rounded" alt="Justin Crisp 2020" width="10%" height="10%"> 
         <h1>{data.firstName} {data.middleName} {data.lastName}</h1>
-    </div>
-	</div>
-	<div class="col-6 col-s-9">
-    <div class="col-sm-3 sidenav">
-            <h2>{data.header}</h2>
-            <h3>{data.location}</h3>
+        <p>{data.header}</p>
+            <p>{data.location}</p>
         <br>
-            <h4>{data.objective}</h4>
-      <br>
+            <p>{data.objective}</p>
     </div>
-	</div>
-	<div class="col-3 col-s-12">
+	  </div>
+
+<div class="col-8 col-s-12">
 		<div class="aside">
 
- <h4><small>WORK IN PROGRESS</small></h4>
-        <ul class="nav nav-tabs">
+ <!-- <h4><small>WORK IN PROGRESS</small></h4> -->
+        <ul class="navtabs">
           <li  on:click={handleTabClick(tab[0])}  class={tab[0].status}><a href="#">{tab[0].name}</a></li>
           <li  on:click={handleTabClick(tab[1])}  class={tab[1].status}><a href="#">{tab[1].name}</a></li>
           <li  on:click={handleTabClick(tab[2])}  class={tab[2].status}><a href="#">{tab[2].name}</a></li>
           <li  on:click={handleTabClick(tab[3])}  class={tab[3].status}><a href="#">{tab[3].name}</a></li>
-          <li  on:click={handleTabClick(tab[4])}  class={tab[4].status}><a href="#">{tab[4].name}</a></li>
+          <!-- <li  on:click={handleTabClick(tab[4])}  class={tab[4].status}><a href="#">{tab[4].name}</a></li> -->
         </ul>
     {#if tab[0].status == 'active'}
     <Experience />
@@ -57,12 +54,16 @@ function handleTabClick (item){
     <Projects />
     {:else if tab[3].status == 'active'}
     <Education />
-    {:else if tab[4].status == 'active'}
-    <Volunteer />
+    <!-- {:else if tab[4].status == 'active'}
+    <Volunteer /> -->
     {/if}
 		</div>
 	</div>
-  </div>
+</div>
+<div class="row">
+
+</div>
+
 
 <!-- <div class="container-fluid">
   <div class="row content">
@@ -77,8 +78,31 @@ function handleTabClick (item){
 </div> -->
 
 <style>
+.navtabs {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #33b5e5;
 
+}
+.navtabs li {
+ float:left;
+}
+
+.navtabs li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.navtabs li a:hover {
+  background-color: white;
+}
 .container {
+    padding: 4px;
     border: 2px solid black;
 }
 
@@ -88,8 +112,8 @@ function handleTabClick (item){
 		padding-bottom: 50px;
 		padding-left: 50px;
 		border-radius: 50%;
-    height: 25%;
-    width: 25%;
+    height: 10%;
+    width: 10%;
 }
 .experience {
     text-align: left;
@@ -205,10 +229,10 @@ function handleTabClick (item){
   .col-12 {width: 100%;}
 }
 
-.jumbotron {
+/* .jumbotron {
 		display: flex;
 		justify-content: center;
 		padding: 125px;
 		background: #0099cc;
-}
+} */
 </style>
