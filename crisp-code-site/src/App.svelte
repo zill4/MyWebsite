@@ -1,14 +1,22 @@
 <script>
-	import Link from './Link.svelte';
-	import Route from './Route.svelte';
+	//import Link from './Link.svelte';
+	//import Route from './Route.svelte';
+	import router from 'page';
+	// pages
+	import Home from './pages/Home.svelte';
+	import About from './pages/About.svelte';
+	import Resume from './pages/Resume.svelte';
+	import Contact from './pages/Contact.svelte';
+
 	import { Grid, HeaderNav, HeaderNavItem, HeaderNavMenu, Header, Row, Column } from "carbon-components-svelte";
 
 	let isOpen = false;  
 	let navItems = [
-		{ id: 1, name: 'Home', link: {path: '/', name: 'Home'} , status: 'active'},
+		{ id: 1, name: 'Home', link: "/" , status: 'active'},
 		//	{ id: 2, name: 'About', link: {path: '/about', name: 'About'}, status: 'inactive'}
-		{ id: 2, name: 'Resume', link: {path: '/resume', name: 'Resume'}, status: 'inactive'}
-		// { id: 4, name: 'Projects', link: {path: '/projects', name: 'Projects'}, status: 'inactive'}
+		{ id: 2, name: 'About', link: "/About", status: 'inactive'},
+		// Not ready because my CSS skills are not good
+		// { id: 3, name: 'Resume', link: "/Resume", status: 'inactive'}
 	];
 
 	function handleNavClick(item){
@@ -18,11 +26,26 @@
 	function handleUpdate(event) {
 		isOpen = event.detail.isOpen;
 	}
-	
+	// current page
+	let page = Home;
+	// Map router for pages.
+	router('/', () => (page = Home));
+	router('/About', () => (page = About));
+	router('/Resume', () => (page = Resume));
+	router.start();
 
 </script>
 
 <style>
+		a {
+	text-transform: uppercase;
+	padding: 1rem;
+	color: white;
+	}
+
+	a:hover {
+		color: black;
+	}
 	.page-container {
 		position: relative;
 		min-height: 100vh;
@@ -54,10 +77,15 @@
 
 </style>
 <!-- Header Nav Bar -->
+
+
+{#if page != Resume }
+
 <Header platformName="CrispCode.io">
 	<HeaderNav aria-label="CrispCodeNavbar">
 		{#each navItems as item}
-		<Link  page={item.link}/>
+		<!-- <Link  page={item.link}/> -->
+		<a href={item.link}> {item.name} </a>
 		{/each}
 	</HeaderNav>
 </Header>
@@ -65,7 +93,7 @@
 <div class="page-container">
 	<div class="content-wrap">
 		<!-- Page content -->
-			<Route />
+			<svelte:component this={page} />
 	</div>
 		<!-- Footer -->
 			<footer class="footer">
@@ -80,4 +108,7 @@
 				</div>
 			</footer>
 </div>
+{:else}
+	<svelte:component this={page} />
+{/if}
 	 	

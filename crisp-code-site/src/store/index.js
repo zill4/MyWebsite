@@ -1,4 +1,3 @@
-import { writable } from 'svelte/store';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {writable } from 'svelte/store';
 
 export const curRoute = writable('/');

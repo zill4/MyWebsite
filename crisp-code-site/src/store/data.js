@@ -1,8 +1,8 @@
 const data = {
     profileImage : "someurl",
     header : "Software Engineer",
-    location : "San Jose, CA",
-    objective : "It is my lifelong dream to work as a programmer in the game industry. As a software engineer, I am looking for challenging problems, passionate teams, and long hours in front a terminal creating magic. My skills are rooted in C programming, but extended to object-oriented abstractions like C++, Java, JavaScript, and Python. I have experience with Unreal Engine 4 and done VR development using Unity. Games are my passion, and my goal is to build them for the rest of my life. がんばります",
+    location : "Seattle, WA",
+    objective : "As a software engineer, I am looking for challenging problems, passionate teams, and long hours in front a terminal creating magic. My skills are rooted in C programming, but extended to object-oriented abstractions like C++, Java, JavaScript, and Python. I have experience with Unreal Engine 4 and done VR development using Unity. Games are my passion, and my goal is to build them for the rest of my life. がんばります",
     news : ["link1","link2","link3","link4"],
     message : "hi",
     firstName : "Justin",
@@ -97,21 +97,36 @@ const data = {
         }
     ],
     projects: [
+        // {
+        //     title: 'ZillA',
+        //     location: 'Samsung Research America',
+        //     start: 'Apr 2019',
+        //     img: {
+        //         link: '../../images/Zill.png',
+        //         title: 'Project ZillA',
+        //         height: '80%',
+        //         width: '80%'
+        //         },
+        //     links: [
+        //         {link: "https://connect.unity.com/p/zilla-project", title: "Unity Project Page"},
+        //         {link: "https://www.zill4.com/", title: "ZillA Website: Work in Progress"}
+        //     ],
+        //     description: "ZillA is an Action RPG built with Unity."
+        // },
         {
-            title: 'ZillA',
-            location: 'Samsung Research America',
-            start: 'Apr 2019',
+            title: 'Warlok',
+            location: 'Seattle',
+            start: 'Feb 2020',
             img: {
-                link: '../../images/Zill.png',
+                link: '../../images/warlok_logo.png',
                 title: 'Project ZillA',
                 height: '80%',
                 width: '80%'
                 },
             links: [
-                {link: "https://connect.unity.com/p/zilla-project", title: "Unity Project Page"},
-                {link: "https://www.zill4.com/", title: "ZillA Website: Work in Progress"}
+                {link: "https://www.warlok.com/", title: "Warlok: Work in Progress"}
             ],
-            description: "ZillA is an Action RPG built with Unity."
+            description: "Warlok is a content creator platform for creating and managing partnerships, sponsorships, and fan engagement."
         },
         {
             title: 'SocialEye',
@@ -127,7 +142,7 @@ const data = {
                 width: '60%'
                 },
 
-            description: "SocialEye is a longterm project meant to help content creators earn more."
+            description: "SocialEye was the beginning to Warlok, and currently lets you mass search the YouTube API for content creators."
         },
         {
             title: 'This Website!',
