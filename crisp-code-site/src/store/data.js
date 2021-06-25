@@ -14,7 +14,7 @@ const data = {
             company: 'Samsung',
             location: 'Mountain View, CA',
             start: 'May 2019',
-            end: 'present',
+            end: 'Sept 2020',
             img: '../../images/samsung.jpg',
             bullets: [
                 "•	Populated Bixby Marketplace from initial Capsule count of less than 20 live Capsules to over 150, over 700% growth, in less than 6-months.",

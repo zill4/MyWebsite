@@ -58,8 +58,8 @@
 			After moving to The Bay Area in 2015, I subsequently enrolled in De Anza College studying Computer Engineering for about 3 years.
 			Once I completed the majority of my Computer Science classes, and started working part-time at RingCentral (A UCAAS company competing with Slack & Zoom), I decided to "drop out".
 			I imediately enrolled at 42 Silicon Valley, a Computer Science school for those looking to focus on coding. The curicullum is in C, there are no teachers, and no classes.
-			Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team. Since then I've been working in Developer Relations on the Bixby team.
-			It's now 2020, almost 5 years since I arrived in the Bay Area. This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.
+			Around May 2019, I competed in, and won a hackathon sponsored by Samsung Bixby team.
+			This year I look to challenge myself with new technologies, and drive to build great things, with amazing people, through coding.
 			</p>
 	</div>
 	<div class="col-3 col-s-12">
