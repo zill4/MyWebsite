@@ -124,7 +124,7 @@ const data = {
                 width: '80%'
                 },
             links: [
-                {link: "https://www.warlok.com/", title: "Warlok: Work in Progress"}
+                {link: "https://warlok.net/", title: "Warlok: Work in Progress"}
             ],
             description: "Warlok is a content creator platform for creating and managing partnerships, sponsorships, and fan engagement."
         },
