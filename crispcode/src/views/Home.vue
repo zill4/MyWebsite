@@ -39,7 +39,7 @@
           <v-card-subtitle> Platform for content creators to share their content. </v-card-subtitle>
 
           <v-card-actions>
-            <v-btn color="purple lighten-2" class="align-center" text> Visit Site </v-btn>
+            <v-btn color="purple lighten-2" class="align-center" href="https://warlok.net" text> Visit Site </v-btn>
 
             <v-spacer></v-spacer>
 
@@ -70,7 +70,7 @@
           <v-card-subtitle> Game development and content creation. </v-card-subtitle>
 
           <v-card-actions>
-            <v-btn color="purple lighten-2" text> Visit my YouTube Channel </v-btn>
+            <v-btn color="purple lighten-2"  href="https://www.youtube.com/channel/UCsu-dRPIvEdB63HnxRTqb2g"  text> Visit my YouTube Channel </v-btn>
           </v-card-actions>
         </v-card>
         <v-col cols="12" md="7">
@@ -95,8 +95,8 @@
 
           <v-card-subtitle> Tool for searching YouTube accounts using the YouTube API. </v-card-subtitle>
           
-          <v-btn color="green lighten-2" text> Visit my YouTube Channel </v-btn>
-          <v-btn color="green lighten-2" text> SocialEye backend Github </v-btn>
+          <v-btn color="purple lighten-2" href="https://socialeye.net/" text> Visit Site </v-btn>
+          <v-btn color="purple lighten-2" href="https://github.com/zill4/SocialEye" text> SocialEye backend Github </v-btn>
         </v-card>
         <v-col cols="12" md="7">
           <blockquote class="text-h6 pa-5 my-4 font-weight-thin">
@@ -121,7 +121,7 @@
           <v-card-subtitle> Game development and content creation. </v-card-subtitle>
 
           <v-card-actions>
-            <v-btn color="purple lighten-2" text> 42 Silicon Valley Projects Github </v-btn>
+            <v-btn color="purple lighten-2" href="https://github.com/zill4/42SiliconValley-Projects" text> 42 Silicon Valley Projects Github </v-btn>
 
 
           </v-card-actions>
