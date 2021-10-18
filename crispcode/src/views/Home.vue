@@ -1,137 +1,128 @@
 <template>
-  <v-container>
-    <v-container>
-      <v-row class="py-16">
-        <v-col cols="12">
-          <h2
-            class="
-              text-h4 text-md-h3 text-center
-              font-weight-black
-              text-capitalize
-            "
-          >
-            CrispCode.io
-          </h2>
-          <h3 class="text-h4 text-uppercase font-weight-thin text-center my-8">
-            by Justin Crisp
-          </h3>
-        </v-col>
-        <v-col >
-          <p>
-            Thank you for taking the time to visit my website! As a full-stack developer with experience working with multiple programming languages and technologies, my goal is to better my skills in software development,
-            such that I can work on great products that make peoples lives better. This year my focus is to refine my full stack development skills with my project Warlok, grow my social skills by building a Twitch and YouTube channel, and share
-            my blogging.
-          </p>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-row>
-      <v-col class="d-flex">
-        <v-card class="pa-2" max-width="344">
-          <v-img
-            class="white--text align-end"
-            src="https://firebasestorage.googleapis.com/v0/b/ember-hearth.appspot.com/o/centered.PNG?alt=media&token=da34c0b3-6701-4441-94ac-16a0dcd5cecc"
-            height="200px"
-          ></v-img>
-
-          <v-card-title> Warlok </v-card-title>
-
-          <v-card-subtitle> Platform for content creators to share their content. </v-card-subtitle>
-
-          <v-card-actions>
-            <v-btn color="purple lighten-2" class="align-center" href="https://warlok.net" text> Visit Site </v-btn>
-
-            <v-spacer></v-spacer>
-
-          </v-card-actions>
-        </v-card>
-        <v-col cols="12" md="7">
-          <p>Warlok is a project built to help content creators</p>
-          <blockquote class="text-h6 pa-5 my-4 font-weight-thin">
-            Many creators seek growth, but have a hard time finding their audience...
-          </blockquote>
-          <p>
-            Warlok aims to solve this through creating a shared space for analyzing content and by connecting with fans, and other creators.
-          </p>
-        </v-col>
+  <v-container fill-height>
+    <v-row class="d-flex flex-row">
+      <v-col class="d-flex align-center justify-end">
+        <v-img
+          class="rounded-circle mb-4 mx-2"
+          src="meee.jfif"
+          max-width="400px"
+        >
+        </v-img>
+      </v-col>
+      <v-col class="d-flex align-center justify-start mb-6">
+        <v-container>
+          <v-row>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer>Flask</sheet-footer>
+            </v-sheet>
+          </v-row>
+          <v-row>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer> MongoDB </sheet-footer>
+            </v-sheet>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer> Firebase </sheet-footer>
+            </v-sheet>
+          </v-row>
+          <v-row>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer> React </sheet-footer>
+            </v-sheet>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer> Vue </sheet-footer>
+            </v-sheet>
+            <v-sheet
+              class="ma-1"
+              color="teal"
+              elevation="7"
+              height="113"
+              rounded
+              width="103"
+            >
+              <sheet-footer> Svelte </sheet-footer>
+            </v-sheet>
+          </v-row>
+        </v-container>
+      </v-col>
+      <v-col>
+        <blockquote
+          class="d-flex align-start justify-start text-h6 my-4 font-weight-thin"
+        >
+          Hi my name is Justin Crisp! Thanks for visiting my website.
+        </blockquote>
+        <!-- <p>
+          Placeholder text hi please see the rest of my site by clicking around and checking out
+          all the cool things that I have to show off okay!?
+        </p> -->
       </v-col>
     </v-row>
     <v-row>
-      <v-col class="d-flex flex-row-reverse">
-        <v-card class="pa-2" max-width="344">
-          <v-img
-            class="white--text align-end"
-            src="http://i3.ytimg.com/vi/gVugJvbMsq0/maxresdefault.jpg"
-            height="200px"
-          ></v-img>
-
-          <v-card-title> ZillA </v-card-title>
-
-          <v-card-subtitle> Game development and content creation. </v-card-subtitle>
-
-          <v-card-actions>
-            <v-btn color="purple lighten-2"  href="https://www.youtube.com/channel/UCsu-dRPIvEdB63HnxRTqb2g"  text> Visit my YouTube Channel </v-btn>
-          </v-card-actions>
-        </v-card>
-        <v-col cols="12" md="7">
-          <p>
-            ZillA is a project for streaming and game development. With a focus on building with Unreal Engine and C++, I aim to work on games in my free time for fun. 
-            I'm a huge fan of video games with Kingdom Hearts, Dark Souls, and Halo being some of my favorite series. My goal is to eventually turn my hobby into something I can focus on full-time someday.
-          </p>
-        </v-col>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col class="d-flex">
-        <v-card class="pa-2" max-width="344">
-          <v-img
-            class="white--text align-end"
-            src="SocialEye.PNG"
-            height="200px"
-          ></v-img>
-
-          <v-card-title> SocialEye </v-card-title>
-
-          <v-card-subtitle> Tool for searching YouTube accounts using the YouTube API. </v-card-subtitle>
-          
-          <v-btn color="purple lighten-2" href="https://socialeye.net/" text> Visit Site </v-btn>
-          <v-btn color="purple lighten-2" href="https://github.com/zill4/SocialEye" text> SocialEye backend Github </v-btn>
-        </v-card>
-        <v-col cols="12" md="7">
-          <blockquote class="text-h6 pa-5 my-4 font-weight-thin">
-            SocialEye was originally a Google Chrome extension used to determine if a given Amazon item was socially responsible. 
-            This was done by scraping websites like GoodCompanies and B-Corp for companies that were considered by their standards to be socially responsible.
-            Unfortunately this idea didn't scale with most companies, because of this I decided to build a simple YouTube API search tool to help with finding emails from content creators on YouTube.
-          </blockquote>
-        </v-col>
-      </v-col>
-    </v-row>
-        <v-row>
-      <v-col class="d-flex flex-row-reverse">
-        <v-card class="pa-2" max-width="344">
-          <v-img
-            class="white--text align-end"
-            src="https://www.42.us.org/wp-content/uploads/2019/05/samsung-bixby-1.jpg"
-            height="200px"
-          ></v-img>
-
-          <v-card-title> 42 Silicon Valley Projects </v-card-title>
-
-          <v-card-subtitle> Game development and content creation. </v-card-subtitle>
-
-          <v-card-actions>
-            <v-btn color="purple lighten-2" href="https://github.com/zill4/42SiliconValley-Projects" text> 42 Silicon Valley Projects Github </v-btn>
-
-
-          </v-card-actions>
-
-        </v-card>
-        <v-col cols="12" md="7">
-          <p>
-            42 Silicon Valley was a programming school that helped students learn how to learn new technologies. We started with learning how to use C with GCC using only the terminal, but gradually built our own libraries from scratch and worked on projects that included recreating the printf function, the LS bash command, and many other projects predominantly with C.
-          </p>
-        </v-col>
+      <v-col align="center">
+        <v-btn icon x-large href="https://www.linkedin.com/in/justcrisp" class="mx-4">
+          <v-avatar color="blue mx-4" size="62">
+            <v-icon dark> mdi-linkedin </v-icon>
+          </v-avatar>
+        </v-btn>
+        <v-btn icon x-large href="twitch.tv/zill4" class="mx-4">
+        <v-avatar color="purple mx-4" size="62">
+          <v-icon dark> mdi-twitch </v-icon>
+        </v-avatar>
+        </v-btn>
+        <v-btn icon x-large href="https://warlok.net/w/zill4" class="mx-4">
+        <v-avatar color="purple mx-4" size="62">
+          <img src="warlok_color.png" alt="Warlok" />
+        </v-avatar>
+        </v-btn>
+        <v-btn icon x-large href="https://www.facebook.com/justin.l.troutman" class="mx-4">
+        <v-avatar color="blue mx-4" size="62">
+          <v-icon dark> mdi-facebook </v-icon>
+        </v-avatar>
+        </v-btn>
+        <v-btn icon x-large href="https://github.com/zill4" class="mx-4">
+        <v-avatar color="green mx-4" size="62">
+          <v-icon dark> mdi-github </v-icon>
+        </v-avatar>
+        </v-btn>
+        <v-btn icon x-large href="https://twitter.com/Justcr1sp/" class="mx-4">
+        <v-avatar color="blue mx-4" size="62">
+          <v-icon dark> mdi-twitter </v-icon>
+        </v-avatar>
+        </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -139,67 +130,27 @@
 
 <script>
 export default {
-  name: "Home",
+  components: {
+    // A simple helper component
+    SheetFooter: {
+      functional: true,
 
-  data: () => ({
-    colors: [
-      "indigo",
-      "warning",
-      "pink darken-2",
-      "red lighten-1",
-      "deep-purple accent-4",
-    ],
-    slides: ["First", "Second", "Third", "Fourth", "Fifth"],
-    ecosystem: [
-      {
-        text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader",
+      render(h, { children }) {
+        return h(
+          "v-sheet",
+          {
+            staticClass:
+              "rounded mt-auto align-center justify-center d-flex px-2 ",
+            props: {
+              color: "rgba(236, 120, 236, .56)",
+              dark: true,
+              height: 50,
+            },
+          },
+          children
+        );
       },
-      {
-        text: "github",
-        href: "https://github.com/vuetifyjs/vuetify",
-      },
-      {
-        text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify",
-      },
-    ],
-    importantLinks: [
-      {
-        text: "Documentation",
-        href: "https://vuetifyjs.com",
-      },
-      {
-        text: "Chat",
-        href: "https://community.vuetifyjs.com",
-      },
-      {
-        text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify",
-      },
-      {
-        text: "Twitter",
-        href: "https://twitter.com/vuetifyjs",
-      },
-      {
-        text: "Articles",
-        href: "https://medium.com/vuetify",
-      },
-    ],
-    whatsNext: [
-      {
-        text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer",
-      },
-      {
-        text: "Select a layout",
-        href: "https://vuetifyjs.com/getting-started/pre-made-layouts",
-      },
-      {
-        text: "Frequently Asked Questions",
-        href: "https://vuetifyjs.com/getting-started/frequently-asked-questions",
-      },
-    ],
-  }),
+    },
+  },
 };
 </script>
