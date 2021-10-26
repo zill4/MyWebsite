@@ -86,11 +86,6 @@
         > </template
       ><v-spacer />
 
-      <v-btn icon @click="changeThemeColor">
-        <v-icon>{{
-          $vuetify.theme.dark ? 'mdi-white-balance-sunny' : 'mdi-weather-night'
-        }}</v-icon>
-      </v-btn>
     </v-app-bar>
   </div>
 
@@ -175,11 +170,11 @@ export default {
         //   title: 'Blog',
         //   to: '/blog',
         // },
-        // {
-        //   icon: 'mdi-contacts',
-        //   title: 'Contact',
-        //   to: '/contact',
-        // },
+        {
+          icon: 'mdi-projects',
+          title: 'Projects',
+          to: '/projects',
+        },
       ],
     }
   },
