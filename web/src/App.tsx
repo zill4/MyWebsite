@@ -8,7 +8,7 @@ import { Home } from './Pages/Home'
 function App() {
   return (
     <div className="">
-      <TopNav />
+      {/* <TopNav /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

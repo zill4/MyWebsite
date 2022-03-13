@@ -23,10 +23,14 @@ const testObjs = [
 
 export const Carousel = () => {
   return (
-    <div className="flex">
+    <div className="grid grid-cols-3">
       {testObjs.map((obj, i) => (
-        <div className="">
-          <CarouselCard CardInfo={obj} />
+        <div className="place-self-center text-center">
+          test
+          <CarouselCard
+            classes={i % 2 === 0 ? 'h-36 justify-center' : 'h-52'}
+            CardInfo={obj}
+          />
         </div>
       ))}
     </div>
