@@ -3,6 +3,12 @@ module.exports = {
   darkMode: true,
   theme: {
     extend: {
+      height: {
+        120: '30rem',
+        128: '32rem',
+        144: '36rem',
+        152: '38rem',
+      },
       colors: {
         teal: '#02B3A6',
         'teal-faded': '#05b1a426',
@@ -24,6 +30,7 @@ module.exports = {
         width: 'width',
       },
     },
+
     screens: {
       tablet: '640px',
       // => @media (min-width: 640px) { ... }

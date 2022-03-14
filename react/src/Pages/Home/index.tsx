@@ -37,9 +37,9 @@ export const Home = () => {
                 "Hi welcome to my website, check out what I'm working on"
                 <p className="p-2 ml-1 my-2 text-lg font-semibold w-96 not-italic font-mono text-left indent-10">
                   Currently I'm focused on content creation, game development,
-                  and web development at Shotcall. Above are some of my game dev
-                  and streaming content. Below I list what I've been working on
-                  for the past few years.
+                  and web development. Above are some of my game dev and
+                  streaming content. Below I list what I've been working on for
+                  the past few years.
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ export const Home = () => {
                 />
                 <div
                   className={
-                    'transition-height delay-300 duration-500 ease-in-out h-1 group-hover:h-full '
+                    'transition-height delay-300 duration-500 ease-in-out h-1 group-hover:h-152 '
                   }>
                   <div className="transition group-hover:delay-500 eas-in duration-500 opacity-0 group-hover:opacity-90  group-hover:visible invisible text-white p-2">
                     <p>
@@ -125,7 +125,7 @@ export const Home = () => {
                       <li>
                         <a
                           href="https://github.com/zill4/Warlokr"
-                          className="underline text-sm text-green-500">
+                          className="underline text-sm text-green-700">
                           Warlok helps content-creators connect with fans and
                           share content. Built with React, TailwindCSS, and
                           NextJS hosted on Firebase. visit: http://warlok.net
@@ -143,7 +143,7 @@ export const Home = () => {
                       <li>
                         <a
                           href="https://github.com/zill4/Ethereum_BlockChain_Todolist"
-                          className="underline text-sm text-gray-400">
+                          className="underline text-sm text-white">
                           Todo-list built with Truffle on Ethereum network.
                         </a>
                       </li>
@@ -208,12 +208,12 @@ export const Home = () => {
               <div className="ml-4 col-start-2 font-semibold text-2xl mt-10   text-center">
                 Samsung
                 <p className="p-2 ml-1 my-2 text-lg font-semibold w-96 not-italic font-mono text-left indent-10">
-                  Helped populate the Bixby Marketplace from initial Capsule
-                  count of less than 20 live Capsules to over 150, over 700%
-                  growth, in less than 6-months. Built sample projects for
-                  potential developers, content creators, and small businesses
-                  for partnerships to populate the Bixby Marketplace. Utilized
-                  YouTube API for targeting potential content creator
+                  At Samsung I helped populate the Bixby Marketplace from
+                  initial Capsule count of less than 20 live Capsules to over
+                  150, over 700% growth, in less than 6-months. Built sample
+                  projects for potential developers, content creators, and small
+                  businesses for partnerships to populate the Bixby Marketplace.
+                  Utilized YouTube API for targeting potential content creator
                   partnerships to bypass YouTube recommendations given during
                   research.
                 </p>
@@ -231,11 +231,7 @@ export const Home = () => {
                   we would take coding exams, and finish solo and group
                   projects, along with optional events that were either a
                   hackathon, volunteer work, or a mico-bootcamp for another
-                  lanuage, like C# or PHP. I left 42 after winning a bootcamp
-                  for Samsung Bixby and getting hired. Unfortunately 42 Silicon
-                  Valley closed in 2020 due to the pandemic, but there are many
-                  other campuses open around the world, like in France, Seoul,
-                  Brazil, and Tokyo.
+                  lanuage, like C# or PHP.
                 </p>
               </div>
               <img
