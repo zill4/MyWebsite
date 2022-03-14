@@ -1,0 +1,8 @@
+{
+  "short_name": "crispcode.io",
+  "name": "Cash Rules Everything Around Me",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
